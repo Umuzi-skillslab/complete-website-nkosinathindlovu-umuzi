@@ -1,30 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>About</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Professional Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
+    <header>
         <h1>About Me</h1>
-    </div>
-    
-    <div>
-        <h2>My Background</h2>
-        <p>I have been working in web development for several years.</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>My Background</h2>
+            <p>I have been building digital experiences for several months now, focusing on modern web standards.</p>
+            
+            <h3>Technical Skills</h3>
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill Area</th>
+                        <th>Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML5 & Semantics</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>CSS3 & Responsive Design</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript (ES6+)</td>
+                        <td>Intermediate</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
         
-        <h3>Skills</h3>
-        <!-- Table should be here but is missing -->
-        <p>HTML, CSS, JavaScript</p>
-    </div>
+        <section>
+            <h3>My Photo</h3>
+            <img src="images/profile.png" alt="Headshot of the web developer" id="profile-img">
+        </section>
+    </main>
     
-    <div>
-        <h3>My Photo</h3>
-        <img src="images/profile.jpg">
-    </div>
-    
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+    <footer>
+        <p>&copy; 2026 Professional Portfolio | Contact: nkosinathi.ndlovu@umuzi.org</p>
+    </footer>
 </body>
 </html>
