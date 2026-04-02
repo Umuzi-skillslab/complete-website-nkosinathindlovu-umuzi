@@ -39,7 +39,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* --- 3. Hero Section (Home Page) --- */
+/* --- 3. Home Page styling --- */
 /* Selector Type: Class */
 .hero {
     padding: 60px;
@@ -61,7 +61,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
-/* --- 4. About Page: Skills Table --- */
+/* --- 4. About Page: Skills Table  --- */
 .skills-table {
     width: 80%;
     margin: 30px auto; /* Centers the table */
@@ -96,10 +96,13 @@ input, textarea, select {
     display: block;
 }
 
+/* --- Vertically aligning the checkbox and its text using flex-box on the contact-me 
+page --- */
 #subscription {
     display: flex;
 }
 
+/* --- Styling the submit button --- */
 .btn-submit {
     background-color: #222;
     color: white;
@@ -108,11 +111,12 @@ input, textarea, select {
     cursor: pointer;
 }
 
+/* --- imposing hoveron the submit button on the contact me page --- */
 .btn-submit:hover {
     background-color: #444;
 }
 
-/* --- 6. Footer --- */
+/* --- 6. Footer styling, all webpages will share the same footer --- */
 footer {
     background-color: #222;
     color: white;
@@ -121,7 +125,7 @@ footer {
     margin-top: 40px;
 }
 
-/* --- 7. General Utility --- */
+/* --- 7. styling the main section of the webpage--- */
 main {
     padding: 20px;
     max-width: 1000px;
