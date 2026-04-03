@@ -1,30 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Professional Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
+    <header>
         <h1>Contact Me</h1>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div>
-        <h2>Get In Touch</h2>
-        
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="text" placeholder="Email">
-            <textarea placeholder="Message"></textarea>
-            
-            <!-- Missing: labels, more input types, validation -->
-            
-            <button>Send</button>
-        </form>
-    </div>
+    <main>
+        <section>
+            <h2>Get In Touch</h2>
+            <form id="contact-form" action="#" method="post">
+                <label for="user-name">Full Name:</label>
+                <input type="text" id="user-name" name="name" placeholder="Enter your name" required minlength="3">
+
+                <label for="user-email">Email Address:</label>
+                <input type="email" id="user-email" name="email" placeholder="email@example.com" required>
+
+                <label for="category">Reason for Contact:</label>
+                <select id="category" name="category">
+                    <option value="project">New Project</option>
+                    <option value="job">Job Interview</option>
+                    <option value="other">General Inquiry</option>
+                </select>
+
+                <fieldset>
+                    <legend>Newsletter Subscription:</legend>
+                <div id="subscription">
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+                    <label for="subscribe">Yes, send me updates!</label>
+                <div>
+                </fieldset>
+
+                <label for="user-message">Message:</label>
+                <textarea id="user-message" name="message" placeholder="How can I help you?" required></textarea>
+                
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+    </main>
     
-    <div class="footer">
-        <p>Contact me at email@example.com</p>
-    </div>
+    <footer>
+        <p>&copy; 2026 Professional Portfolio | Contact: nkosinathi.ndlovu@umuzi.org</p>
+    </footer>
 </body>
 </html>

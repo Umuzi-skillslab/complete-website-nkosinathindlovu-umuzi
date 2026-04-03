@@ -1,0 +1,133 @@
+/* --- 1. Basic Page Setup --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Good contrast against white */
+    background-color: #f9f9f9;
+}
+
+/* --- 2. Header & Navigation --- */
+/* Selector Type: Element */
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center; /* Fixed alignment issue from starter code */
+}
+
+/* Selector Type: Descendant */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Makes menu horizontal */
+    margin: 0 15px;
+}
+
+/* Selector Type: Pseudo-class (:hover) */
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff9900; /* Visual feedback for accessibility */
+    text-decoration: underline;
+}
+
+/* --- 3. Home Page styling --- */
+/* Selector Type: Class */
+.hero {
+    padding: 60px;
+    background-color: lightslategrey; /* Fixed: High contrast dark blue for white text */
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+
+#profile-img {
+    border-radius: 15px;
+    height: 500px;
+}
+
+.hero img {
+    width: 300px; /* Fixed: Prevents image from being 100% and too large */
+    border: 5px solid white; /* Box Model: Border */
+    margin-top: 20px;        /* Box Model: Margin */
+    border-radius: 10px;
+}
+
+/* --- 4. About Page: Skills Table  --- */
+.skills-table {
+    width: 80%;
+    margin: 30px auto; /* Centers the table */
+    border-collapse: collapse;
+}
+
+.skills-table th, .skills-table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Box Model: Padding */
+    text-align: left;
+}
+
+/* Selector Type: Pseudo-class (nth-child) */
+.skills-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternating row colors requirement */
+}
+
+/* --- 5. Contact Page: Form --- */
+/* Selector Type: ID */
+#contact-form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Box Model: Margin */
+    display: block;
+}
+
+/* --- Vertically aligning the checkbox and its text using flex-box on the contact-me 
+page --- */
+#subscription {
+    display: flex;
+}
+
+/* --- Styling the submit button --- */
+.btn-submit {
+    background-color: #222;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* --- imposing hoveron the submit button on the contact me page --- */
+.btn-submit:hover {
+    background-color: #444;
+}
+
+/* --- 6. Footer styling, all webpages will share the same footer --- */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center; /* Fixed: Changed from left-aligned to centered */
+    margin-top: 40px;
+}
+
+/* --- 7. styling the main section of the webpage--- */
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
